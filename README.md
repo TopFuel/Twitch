@@ -11,10 +11,10 @@ Please see the [Base Installation Guide](https://socialiteproviders.com/usage/),
 ### Add configuration to `config/services.php`
 
 ```php
-'twitch' => [    
-  'client_id' => env('TWITCH_CLIENT_ID'),  
-  'client_secret' => env('TWITCH_CLIENT_SECRET'),  
-  'redirect' => env('TWITCH_REDIRECT_URI') 
+'twitch' => [
+  'client_id' => env('TWITCH_CLIENT_ID'),
+  'client_secret' => env('TWITCH_CLIENT_SECRET'),
+  'redirect' => env('TWITCH_REDIRECT_URI')
 ],
 ```
 
@@ -60,7 +60,7 @@ return Socialite::driver('twitch')->redirect();
 ### Returned User fields
 
 - ``id``
-- ``nickname`` (same as ``name``)
+- ``nickname``
 - ``name``
 - ``email``
 - ``avatar``
